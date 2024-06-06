@@ -1,9 +1,9 @@
 data_dir: /home/as26840@ens.ad.etsmtl.ca/data/wildfirespreadTS_hdf5
-batch_size: 64
+batch_size: 16
 n_leading_observations: 1
 crop_side_length: 128
 load_from_hdf5: true
 num_workers: 8
 remove_duplicate_features: false
 features_to_keep: null
-n_leading_observations_test_adjustment: 5
+n_leading_observations_test_adjustment: 1

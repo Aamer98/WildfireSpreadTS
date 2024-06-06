@@ -97,6 +97,7 @@ class BaseModel(pl.LightningModule, ABC):
             x, y = batch
             doys = None
 
+
         # If the model requires a certain fixed size, perform repeated inference on crops of the image,
         # and aggregate the results. When we reach the last row or column, which might not be divisible by
         # the required size, we align the crop window with the right/bottom edge of the image. This means 
@@ -159,6 +160,7 @@ class BaseModel(pl.LightningModule, ABC):
         Returns:
             _type_: _description_
         """
+        # breakpoint()
         y_hat, y = self.get_pred_and_gt(batch)
 
         loss = self.compute_loss(y_hat, y)
